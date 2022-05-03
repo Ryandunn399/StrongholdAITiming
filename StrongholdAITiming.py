@@ -23,7 +23,7 @@ WOLF_INTERVAL = 35
 PIG_INTERVAL = 88
 SECONDS_TO_HOUR = 3600
 HOURS_TO_DAY = 24
-EST_DIFF = 5
+EST_DIFF = 4
 
 print("Version 1.2: Steinhoff Update")
 
