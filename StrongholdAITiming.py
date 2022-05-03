@@ -10,7 +10,7 @@ now = datetime.datetime.now()
 now_string = now.strftime("%m/%d/%y @ %H:%M")
 
 """
-This code will calculate the time until the next snake attack
+This code will calculate the time until the next wolf attack
 """
 initial_wolf_date = datetime.datetime(year = 2022, month = 4, day = 11, hour = 16, minute = 33)
 initial_wolf_date_string = initial_wolf_date.strftime("%m/%d/%y @ %H:%M")
