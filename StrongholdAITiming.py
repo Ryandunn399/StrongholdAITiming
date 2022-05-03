@@ -7,13 +7,11 @@ import math
 from datetime import timedelta
 
 now = datetime.datetime.now()
-now_string = now.strftime("%m/%d/%y @ %H:%M")
 
 """
 This code will calculate the time until the next wolf attack
 """
 initial_wolf_date = datetime.datetime(year = 2022, month = 4, day = 11, hour = 16, minute = 33)
-initial_wolf_date_string = initial_wolf_date.strftime("%m/%d/%y @ %H:%M")
 
 difference_wolf = now - initial_wolf_date
 difference_wolf_hours = difference_wolf.days * 24 + difference_wolf.seconds // 3600
@@ -28,7 +26,6 @@ print("The next wolf attack will be at: ", updated_wolf_date_string)
 This code will calculate the time until the next pig attack
 """
 initial_pig_date = datetime.datetime(year = 2022, month = 3, day = 25, hour = 2, minute = 59)
-initial_pig_date_string = initial_wolf_date.strftime("%m/%d/%y @ %H:%M")
 
 difference_pig = now - initial_pig_date
 difference_pig_hours = difference_pig.days * 24 + difference_pig.seconds // 3600
