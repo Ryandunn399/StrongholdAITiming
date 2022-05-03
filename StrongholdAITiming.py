@@ -47,7 +47,7 @@ initial_pig_date = datetime.datetime(year = BASE_YEAR, month = BASE_PIG_MONTH, d
 
 difference_pig = now - initial_pig_date
 difference_pig_hours = difference_pig.days * HOURS_TO_DAY + difference_pig.seconds // SECONDS_TO_HOUR
-pig_ratio = difference_pig_hours / 88 + 1
+pig_ratio = difference_pig_hours / PIG_INTERVAL + 1
 
 updated_pig_date = initial_pig_date + datetime.timedelta(hours=(PIG_INTERVAL * math.floor(pig_ratio)))
 updated_pig_data_string = updated_pig_date.strftime("%m/%d/%y @ %I:%M %p")
